@@ -174,7 +174,7 @@ static NSString * const kRate = @"rate";
     [self.delegate videoNode:self didSetCurrentItem:playerItem];
   }
 
-  if (self.image == nil && self.URL == nil) {
+  if (self.image == nil && self.URL == nil && !self.shouldDisablePlaceholderImage) {
     [self generatePlaceholderImage];
   }
 }
@@ -338,7 +338,7 @@ static NSString * const kRate = @"rate";
           }
         }
         // If we don't yet have a placeholder image update it now that we should have data available for it
-        if (self.image == nil && self.URL == nil) {
+        if (self.image == nil && self.URL == nil && !self.shouldDisablePlaceholderImage) {
           [self generatePlaceholderImage];
         }
       }

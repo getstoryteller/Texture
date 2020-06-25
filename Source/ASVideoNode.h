@@ -73,6 +73,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL muted;
 @property BOOL shouldAggressivelyRecoverFromStall;
 
+@property BOOL shouldDisablePlaceholderImage;
+
 @property (readonly) ASVideoNodePlayerState playerState;
 //! Defaults to 10000
 @property int32_t periodicTimeObserverTimescale;
