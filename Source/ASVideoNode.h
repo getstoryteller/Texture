@@ -7,6 +7,9 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+//  This file has been modified by Storm Ideas Ltd.
+//  `shouldDisablePlaceholderImage` attribute was added
+
 #import <AsyncDisplayKit/ASAvailability.h>
 #import <AsyncDisplayKit/ASNetworkImageNode.h>
 
@@ -73,6 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL muted;
 @property BOOL shouldAggressivelyRecoverFromStall;
 
+// This attribute was adedd by Storm Ideas Ltd.
 @property BOOL shouldDisablePlaceholderImage;
 
 @property (readonly) ASVideoNodePlayerState playerState;
