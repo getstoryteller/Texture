@@ -7,6 +7,10 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+//  This file has been modified by Storm Ideas Ltd
+//  The change was to check if `shouldDisablePlaceholderImage` is set to true
+//  before generating placeholder image
+
 #import <AsyncDisplayKit/ASVideoNode.h>
 
 #if AS_USE_VIDEO
@@ -174,6 +178,7 @@ static NSString * const kRate = @"rate";
     [self.delegate videoNode:self didSetCurrentItem:playerItem];
   }
 
+  // This if statement was modified by Storm Ideas Ltd. by adding `shouldDisablePlaceholderImage` attribute check
   if (self.image == nil && self.URL == nil && !self.shouldDisablePlaceholderImage) {
     [self generatePlaceholderImage];
   }
@@ -338,6 +343,7 @@ static NSString * const kRate = @"rate";
           }
         }
         // If we don't yet have a placeholder image update it now that we should have data available for it
+        // This if statement was modified by Storm Ideas Ltd. by adding `shouldDisablePlaceholderImage` attribute check
         if (self.image == nil && self.URL == nil && !self.shouldDisablePlaceholderImage) {
           [self generatePlaceholderImage];
         }

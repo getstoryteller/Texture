@@ -12,6 +12,15 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-59C939.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Texture.svg)](https://github.com/texturegroup/texture/blob/master/LICENSE)
 
+## Fork changes
+
+There were a few changes in the original source files made by Storm Ideas Ltd.
+
+- `Source/ASVideoNode.h` - adding `shouldDisablePlaceholderImage` attribute
+- `Source/ASVideoNode.mm` - checking `shouldDisablePlaceholderImage` attribute before generating placeholder image
+
+Those changes were made with commit [`5609d0f4eb69d856a59bb9bc844c772442cb21bb`](https://github.com/stormideas/Texture/commit/5609d0f4eb69d856a59bb9bc844c772442cb21bb).
+
 ## Installation
 
 Texture is available via CocoaPods or Carthage. See our [Installation](http://texturegroup.org/docs/installation.html) guide for instructions.
